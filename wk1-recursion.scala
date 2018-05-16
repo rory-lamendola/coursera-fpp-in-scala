@@ -10,32 +10,30 @@ object Main {
     }
   }
 
+
   /**
    * Exercise 1
    */
-    def pascal(c: Int, r: Int): Int = {
-      if (c == 0 || c == r) 1
-      else pascal(c - 1, r - 1) + pascal(c, r - 1)
-    }
+  def pascal(column: Int, row: Int): Int = {
+    if (column == 0 || column == row) 1
+    else pascal(column - 1, row - 1) + pascal(column, row - 1)
+  }
   
   /**
    * Exercise 2
    */
   def balance(chars: List[Char]): Boolean = {
-    def count(chars: List[Char], acc: Int): Int = {
+    def countOpens(chars: List[Char], acc: Int): Int = {
       if (chars.isEmpty || acc < 0) acc
       else {
-        val c = chars.head
-        val n = {
-          if (c == '(') acc + 1
-          else if (c == ')') acc - 1
-          else acc
-        }
-        count(chars.tail, n)
+        countOpens(chars.tail, chars.head match {
+          case '(' => acc + 1
+          case ')' => acc - 1
+          case _ => acc
+        })
       }
     }
-    count(chars, 0) == 0
-
+    countOpens(chars, 0) == 0
   }
   
   /**
@@ -49,4 +47,5 @@ object Main {
     }
     countCombinations(money, coins)
   }
+
   }
