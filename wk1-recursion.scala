@@ -10,18 +10,6 @@ object Main {
     }
   }
 
-  def fib(n : Int) : Int = {
-    @annotation.tailrec
-    def go(n : Int, first : Int = 0, second : Int = 1) : Int = {
-      if (n == 0) first
-      else if (n == 1) second
-      else go(n - 1, second, first + second)
-    }
-    go(n)
-  }
-
-  fib(1)
-
   /**
    * Exercise 1
    */
