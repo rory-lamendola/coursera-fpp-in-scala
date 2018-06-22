@@ -1,0 +1,18 @@
+[0m[[0minfo[0m] [0m[32mHuffmanSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- weight of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- chars of a larger tree[0m[0m
+[0m[[0minfo[0m] [0m[32m- string2chars("hello, world")[0m[0m
+[0m[[0minfo[0m] [0m[32m- makeOrderedLeafList for some frequency table[0m[0m
+[0m[[0minfo[0m] [0m[32m- times[0m[0m
+[0m[[0minfo[0m] [0m[32m- combine of some leaf list[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode very short codes should work[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode very short codes should work[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode and encode a very short text should be identity[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode and quickEncode should be identity[0m[0m
+[0m[[0minfo[0m] [0m[32m- makeOrderedLeafList[0m[0m
+[0m[[0minfo[0m] [0m[32m- combine leafs[0m[0m
+[0m[[0minfo[0m] [0m[32m- combine all leafs[0m[0m
+[0m[[0minfo[0m] [0m[32m- create code tree from list of chars[0m[0m
+[0m[[0minfo[0m] [0m[32m- encode codes should work[0m[0m
+[0m[[0minfo[0m] [0m[32m- quick encode very short codes should work[0m[0m
+[0m[[0minfo[0m] [0m[32m- decode secret[0m[0m
